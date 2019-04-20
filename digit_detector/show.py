@@ -2,8 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
-# Todo : 그림 그리는 방식을 데코레이터 패턴이로 정리해보자.
-
 
 def draw_contour(image, region):
     image_drawn = image.copy()

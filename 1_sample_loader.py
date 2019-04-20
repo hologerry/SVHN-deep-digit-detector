@@ -32,8 +32,6 @@ if __name__ == "__main__":
     print(train_samples.shape, train_labels.shape)
     print(validation_samples.shape, validation_labels.shape)
 
-    # show.plot_images(samples, labels.reshape(-1,).tolist())
-
     file_io.FileHDF5().write(train_samples, "train.hdf5", "images", "w", dtype="uint8")
     file_io.FileHDF5().write(train_labels, "train.hdf5", "labels", "a", dtype="int")
 

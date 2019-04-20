@@ -70,7 +70,7 @@ class FileJson(File):
         """
         return json.loads(open(filename).read())
 
-    # Todo : Exception ó��
+    # Todo : Exception
     def write(self, data, filename, write_mode="w"):
         self._check_directory(filename)
         with open(filename, write_mode) as f:

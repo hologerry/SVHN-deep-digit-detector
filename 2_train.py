@@ -26,8 +26,8 @@ if __name__ == "__main__":
     print "mean value of the train images : {}".format(mean_value)
     # (457723, 32, 32, 1), (113430, 32, 32, 1)
     print "Train image shape is {}, and Validation image shape is {}".format(X_train.shape, X_val.shape)
-    train_.train_detector(X_train, X_val, Y_train, Y_val, nb_filters=NB_FILTERS, nb_epoch=NB_EPOCH,
-                          nb_classes=2, save_file=DETECTOR_FILE)
+    train_.train_detector(X_train, X_val, Y_train, Y_val, nb_filters=NB_FILTERS,
+                          nb_epoch=NB_EPOCH, nb_classes=2, save_file=DETECTOR_FILE)
 
     # Train recognizer
     X_train, X_val, Y_train, Y_val, mean_value = \

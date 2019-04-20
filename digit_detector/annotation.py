@@ -1,4 +1,4 @@
-import file_io
+from digit_detector import file_io
 import os
 import numpy as np
 

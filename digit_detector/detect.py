@@ -64,7 +64,7 @@ class NonMaxSuppressor:
 
 class DigitSpotter:
 
-    # Todo classifier, recognizer 정리
+    # Todo classifier, recognizer
     def __init__(self, classifier, recognizer, region_proposer):
         """
         Parameters:

@@ -6,8 +6,6 @@ import crop
 
 class Regions:
 
-    """ Image 에서의 bounding box 를 관리하는 class """
-
     def __init__(self, image, boxes, cropper=crop.CropperWithoutPad()):
         self._image = image
         self._boxes = boxes
