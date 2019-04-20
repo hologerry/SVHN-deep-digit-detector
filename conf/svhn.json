@@ -22,7 +22,7 @@
 		"sampling_ratio_for_negative_images": 1.0,
 		"num_patches_per_negative_image": 100
 	},
-	
+
 	"descriptor":
 	{
 		"algorithm": "Image",
@@ -31,7 +31,7 @@
 			"color_type": "gray"
 		}
 	},
-	
+
 	"classifier":
 	{
 		"algorithm": "ConvNet",
@@ -42,7 +42,7 @@
 		},
 		"output_file": "models/detector_model.hdf5"
 	},
-	
+
 	"detector":
 	{
 		"window_step": [1, 1],
@@ -60,7 +60,7 @@
 		"pyramid_scale" : 0.6,
 		"min_probability" : 0.5
 	}
-	
-	
+
+
 }
 

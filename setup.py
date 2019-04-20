@@ -6,6 +6,4 @@ setup(name='number-detector',
       author='jeongjoonsup',
       author_email='penny4860@gmail.com',
       url='https://penny4860.github.io/',
-      packages=['digit_detector'],  
-     )
-
+      packages=['digit_detector'],)
