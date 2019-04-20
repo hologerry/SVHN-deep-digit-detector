@@ -4,8 +4,8 @@ import digit_detector.annotation as ann
 import digit_detector.region_proposal as rp
 
 N_IMAGES = None
-DIR = 'datasets/svhn/train'
-ANNOTATION_FILE = "datasets/svhn/train/digitStruct.json"
+DIR = 'dataset/svhn/train'
+ANNOTATION_FILE = "dataset/annotation/train/digitStruct.json"
 NEG_OVERLAP_THD = 0.05
 POS_OVERLAP_THD = 0.6
 PATCH_SIZE = (32, 32)
