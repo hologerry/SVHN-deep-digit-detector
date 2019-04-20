@@ -12,8 +12,8 @@ import digit_detector.classify as cls
 
 model_filename = "detector_model.hdf5"
 model_input_shape = (32, 32, 1)
-DIR = '../datasets/svhn/train'
-ANNOTATION_FILE = "../datasets/svhn/train/digitStruct.json"
+DIR = 'atasets/svhn/test'
+ANNOTATION_FILE = "datasets/svhn/test/digitStruct.json"
 
 detect_model = "detector_model.hdf5"
 recognize_model = "recognize_model.hdf5"

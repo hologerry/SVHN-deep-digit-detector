@@ -4,8 +4,8 @@ import digit_detector.annotation as ann
 import digit_detector.region_proposal as rp
 
 N_IMAGES = None
-DIR = '../datasets/svhn/train'
-ANNOTATION_FILE = "../datasets/svhn/train/digitStruct.json"
+DIR = 'datasets/svhn/train'
+ANNOTATION_FILE = "datasets/svhn/train/digitStruct.json"
 NEG_OVERLAP_THD = 0.05
 POS_OVERLAP_THD = 0.6
 PATCH_SIZE = (32, 32)
@@ -17,7 +17,7 @@ if __name__ == "__main__":
                                n_files_to_sample=N_IMAGES, random_order=False)
     n_files = len(files)
     n_train_files = int(n_files * 0.8)
-    print n_train_files
+    print(n_train_files)
 
     extractor = extractor_.Extractor(rp.MserRegionProposer(),
                                      ann.SvhnAnnotation(ANNOTATION_FILE), rp.OverlapCalculator())
@@ -29,10 +29,10 @@ if __name__ == "__main__":
     validation_samples, validation_labels = extractor.extract_patch(files[n_train_files:], PATCH_SIZE,
                                                                     POS_OVERLAP_THD, NEG_OVERLAP_THD)
 
-    print train_samples.shape, train_labels.shape
-    print validation_samples.shape, validation_labels.shape
+    print(train_samples.shape, train_labels.shape)
+    print(validation_samples.shape, validation_labels.shape)
 
-#     show.plot_images(samples, labels.reshape(-1,).tolist())
+    # show.plot_images(samples, labels.reshape(-1,).tolist())
 
     file_io.FileHDF5().write(train_samples, "train.hdf5", "images", "w", dtype="uint8")
     file_io.FileHDF5().write(train_labels, "train.hdf5", "labels", "a", dtype="int")
