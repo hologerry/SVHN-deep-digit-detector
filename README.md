@@ -111,7 +111,7 @@ In the running time, the detector operates in the 2-steps.
 * precision value : 0.045
 * f1_score : 0.084
 
-#### 4.1. Performance of the MSER+CNN detector
+#### 4.2. Performance of the MSER+CNN detector
 
 * recall value : 0.513
 * precision value : 0.714

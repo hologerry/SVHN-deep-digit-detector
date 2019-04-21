@@ -64,7 +64,6 @@ class NonMaxSuppressor:
 
 class DigitSpotter:
 
-    # Todo classifier, recognizer
     def __init__(self, classifier, recognizer, region_proposer):
         """
         Parameters:
@@ -116,7 +115,6 @@ class DigitSpotter:
         if show_result:
             for i, bb in enumerate(bbs):
 
-                # todo : show module 정리
                 image = show.draw_box(image, bb, 2)
 
                 y1, y2, x1, x2 = bb

@@ -1,22 +1,22 @@
 {
 	"dataset":
 	{
-		"pos_data_dir": "dataset/svhn/train",
+		"pos_data_dir": "../dataset/svhn/train",
 		"pos_format": "*.png",
-		"test_data_dir": "dataset/svhn/test",
-		"extra_data_dir": "dataset/svhn/extra",
-		"easy_data_dir": "dataset/svhn/easy_test",
-		"annotation_file": "dataset/svhn/train/digitStruct.json",
-		"annotation_file_test": "dataset/svhn/test/digitStruct.json",
-		"neg_data_dir": "dataset/houses",
+		"test_data_dir": "../dataset/svhn/test",
+		"extra_data_dir": "../dataset/svhn/extra",
+		"easy_data_dir": "../dataset/svhn/easy_test",
+		"annotation_file": "../dataset/svhn/train/digitStruct.json",
+		"annotation_file_test": "../dataset/svhn/test/digitStruct.json",
+		"neg_data_dir": "../dataset/houses",
 		"neg_format": "*.jpg",
-		"neg_data_from_train": "dataset/svhn/train/negative_images",
+		"neg_data_from_train": "../dataset/svhn/train/negative_images",
 		"neg_data_from_train_format": "*.png"
 	},
 
 	"extractor":
 	{
-		"output_file": "dataset/output/svhn_features.hdf5",
+		"output_file": "../dataset/output/svhn_features.hdf5",
 		"padding": 0,
 		"sampling_ratio_for_positive_images": 1.0,
 		"sampling_ratio_for_negative_images": 1.0,
@@ -50,7 +50,7 @@
 		"pyramid_scale": 0.9,
 		"window_dim": [32, 16],
 		"min_probability": 0.7,
-		"output_file": "dataset/output/svhn_detector.pkl"
+		"output_file": "../dataset/output/svhn_detector.pkl"
 	},
 
 	"hard_negative_mine":

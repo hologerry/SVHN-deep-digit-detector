@@ -16,6 +16,7 @@ if __name__ == "__main__":
     files = file_io.list_files(directory=DIR, pattern="*.png", recursive_option=False,
                                n_files_to_sample=N_IMAGES, random_order=False)
     n_files = len(files)
+    print(n_files)
     n_train_files = int(n_files * 0.8)
     print(n_train_files)
 
